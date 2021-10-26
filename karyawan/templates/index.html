@@ -8,8 +8,9 @@
     <!-- <link rel="stylesheet" href="style.css"> -->
     <style>
         body {
-            padding: 0;
-            margin: 0;
+            padding:0;
+            margin:30px;
+            bottom: 100px;
             background-color: #1C0C5B;
             background-size: cover;
             font-family: sans-serif;
@@ -24,53 +25,59 @@
 
         .box {
             position: absolute;
-            width: 400px;
-            background-color: white;
+            width: 300px;
+            background-color: rgb(218, 218, 233);
             top:35%;
             left:35%;
             transform: translate(-50% -50%);
             border-radius: 15px;
-            box-shadow: 0 10px 10px 10px rgb(0, 0, 0, 2);
+            box-shadow: 0 2px 2px 2px rgb(0, 0, 0, 2);
         }
 
        .login.area{
            text-align: center;
-           padding: 50px 50px 30px 50px;
+           padding: 30px 30px 10px 30px;
        }
-       .username,
-       .password{
+       .Username,
+       .Email,
+       .Devisi,
+       .Contact{
            width: 100%;
            text-align: center;
-           padding: 13px 0;
+           padding: 7px 0;
            border-radius: 20px;
            outline: none;
            border: none;
-           color: white;
+           color: rgb(12, 9, 9);
            background-color: rgba(55, 10, 114, .5);
            margin-bottom: 15px;
            transition: 5s;
        }
-       .username::placeholder,
-       .password::placeholder {
-           color: rgba(225, 225, 225, .7);
+       .Username::placeholder,
+       .Email::placeholder,
+       .Devisi::placeholder,
+       .Contact::placeholder{
+           color: rgba(255, 254, 254, 0.7);
        }
 
-       .username:focus,
-       .password:focus{
-        background-color: rgba(55, 10, 114, .7);
+       .Username:focus,
+       .Email:focus,
+       .Devisi:focus,
+       .Contact:focus{
+        background-color: rgba(249, 249, 250, 0.7);
        }
 
     .submit{
-        width: 150px;
-        padding: 10x;
-        background-color:rgba(55, 10, 114, 1) ;
-        border-radius: 10px;
+        width: 90px;
+        padding: 15x;
+        background-color:rgb(81, 19, 158) ;
+        border-radius: 7px;
         font-weight: bold;
-        color: white;
+        color: rgb(255, 254, 254);
         border: none;
         outline: none;
-        margin: 10px;
-        transition: .2s;
+        margin: 15px;
+        transition: .6s;
         cursor: pointer;
     }
     .submit:hover{
@@ -90,14 +97,15 @@
     <div class="overlay">
     <form action="index.html" method="post" class="box">
         <div class="header">
-            <h4>login to your account</h4>
-            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, necessitatibus itaque ea beatae atque at ipsa. Qui libero atque quibusdam. Suscipit dignissimos voluptatum maiores perferendis iure similique, exercitationem amet illum!</p> -->
+            <center><h4>Login To Your Account</h4></center>
         </div>
         <div class="login area">
-            <input type="text" name="" class="username" placeholder="username">
-            <input type="password" class="password" placeholder="password">
+            <label for=""
+            ></label><input type="Text" name="" class="Username" placeholder="Username">
+            <input type="Email" class="Email" placeholder="Email">
+            <input type="Devisi" class="Devisi" placeholder="Devisi">
+            <input type="Contact" class="Contact" placeholder="Contact">
             <input type="submit" value="Tambah" class="submit">
-            <a href="#">forgot password?</a>
         </div>
     </form>
     </div>
